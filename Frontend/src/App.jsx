@@ -10,72 +10,54 @@ function App() {
     <>
       <div className="">
         <Navbar />
-        {/* <div className="relative flex h-80">
-          <img
-            src={Hero}
-            className="absolute inset-0 w-full h-[300px] object-cover z-0"
-            alt="Hero"
-          />
 
-          <div className=" z-10 flex justify-center items-center">
-            <div className="bg-white  shadow-md bg-clip-border rounded-xl w-96 flex">
-              <div className="p-6">
-                <h5 className="block mb-2 font-sans text-xl font-semibold leading-snug text-blue-gray-900">
-                  UI/UX Review Check
-                </h5>
-                <p className="block font-sans text-base font-light leading-relaxed text-inherit">
-                  The place is close to Barceloneta Beach and bus stop just 2
-                  min by walk and near to where you can enjoy the main night
-                  life in Barcelona.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        <section className="relative py-12 md:py-32 px-4">
-  <div className="z-20 top-10 relative flex flex-col justify-end text-white mx-auto">
-    <div className="w-full md:w-[630px] h-auto px-4 md:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400 md:flex flex-col justify-start items-start gap-5 hidden">
-      <div className="w-full md:w-[556px] text-white text-4xl md:text-5xl font-bold font-inter capitalize leading-tight md:leading-[48px]">
-        We crush your competitors, goals, and sales records - without
-        the B.S.
-      </div>
-      <div className="px-3 md:px-5 py-2 md:py-3 bg-orange-400 rounded-md flex justify-center items-center gap-2">
-        <div className="text-white text-sm md:text-base font-bold font-inter uppercase leading-tight">
-          Get free consultation
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div className="absolute inset-0 z-10">
-    <img
-      src={Hero}
-      alt=""
-      className="w-full h-full object-cover object-center "
-      style={{ maxWidth: '100%', height: 'auto' }}
-    />
-  </div>
-</section>
-
-        
-    <section className="sm:my-60 my-24">
-    <div className="w-full md:w-[630px]  h-auto px-4 md:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400 flex flex-col justify-start items-start gap-5 md:hidden ">
-              <div className="w-full md:w-[556px] text-white text-4xl md:text-5xl font-bold font-inter capitalize leading-tight md:leading-[48px]">
+        <section className="relative py-12 lg:py-32 px-4">
+          <div
+            className="z-20  relative flex flex-col justify-end text-white mx-auto "
+            style={{ transform: "translateY(110%)" }}
+          >
+            <div className="w-full md:w-[300px] h-auto px-4 md:px-5 pt-2 pb-4 bg-gradient-to-l from-cyan-500 to-green-400 lg:flex flex-col justify-start items-start gap-4 hidden">
+              <div className="w-full md:w-[226px] text-white text-md md:text-lg font-bold font-inter capitalize leading-tight md:leading-[28px]">
                 We crush your competitors, goals, and sales records - without
                 the B.S.
               </div>
-              <div className="px-3 md:px-5 py-2 md:py-3 bg-orange-400 rounded-md flex justify-center items-center gap-2">
+              <a>
+                <div className="px-2 md:px-1 py-1 md:py-3 bg-orange-400 rounded-md flex justify-center items-center gap-2">
+                  <div className="text-white text-xs md:text-xs font-bold font-inter uppercase ">
+                    Get free consultation
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div className="absolute inset-0 z-10">
+            <img
+              src={Hero}
+              alt=""
+              className="w-full h-full object-cover object-center "
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </div>
+        </section>
+
+        <section className="sm:my-60 my-24">
+          <div className="w-full md:w-[630px]  h-auto px-4 md:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400 flex flex-col justify-start items-start gap-5 md:hidden ">
+            <div className="w-full md:w-[556px] text-white text-4xl md:text-5xl font-bold font-inter capitalize leading-tight md:leading-[48px]">
+              We crush your competitors, goals, and sales records - without the
+              B.S.
+            </div>
+            <div className="px-3 md:px-5 py-2 md:py-3 bg-orange-400 rounded-md flex justify-center items-center gap-2">
+              <a>
                 <div className="text-white text-sm md:text-base font-bold font-inter uppercase leading-tight">
                   Get free consultation
                 </div>
-              </div>
+              </a>
             </div>
-    </section>
-            
-        
+          </div>
+        </section>
 
-        <section className=" mx-20 mb-20 mt-96">
+        <section className=" mx-20 mb-20 md:mt-96">
           <div>
             <div className="mt-10 relative flex flex-col rounded-xl bg-white text-gray-700 w-full sm:flex-row sm:px-6">
               <div className="relative overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl">
@@ -122,7 +104,7 @@ function App() {
               </div>
             </div>
 
-            <div className="px-10 flex flex-col rounded-xl bg-white text-gray-700 mt-20 sm:flex-row sm:gap-[80px]">
+            <div className=" flex flex-col rounded-xl bg-white text-gray-700 mt-20 sm:flex-row sm:gap-[80px]">
               <div className="order-2 sm:order-1 sm:w-1/2">
                 <div className="p-6">
                   <h6 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-[#6B3CC9] uppercase">
@@ -164,7 +146,7 @@ function App() {
                 <img
                   src={Image1}
                   alt="card-image"
-                  className="object-cover w-full h-auto sm:h-full sm:object-contain"
+                  className="object-cover w-60 h-auto sm:h-full sm:object-contain"
                 />
               </div>
             </div>
